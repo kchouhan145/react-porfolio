@@ -13,8 +13,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-[95vh] w-[90vw] max-w-6xl mx-auto rounded-2xl m-6 shadow-2xl bg-gradient-to-br from-white via-gray-100 to-gray-200 flex flex-col items-center justify-center gap-8 p-8">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">My Projects</h2>
+    <div className="min-h-[95vh] w-[90vw] max-w-6xl mx-auto rounded-2xl m-6 shadow-2xl bg-white flex flex-col items-center justify-center gap-8 p-8 dark:bg-gray-800">
+      <h2 className="text-3xl font-bold text-gray-800 mb-4 dark:text-white">My Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {projects.map((project, idx) => (
           <Project
