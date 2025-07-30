@@ -3,9 +3,11 @@ import Project from './Project'
 import NotesIcon from '../assets/notessaver.png'
 import WeatherIcon from '../assets/weather.png'
 import QuizIcon from '../assets/quiz.png'
+import ArtGenIcon from '../assets/ArtGen.png'
 
 const Projects = () => {
   const projects = [
+    { name: 'ArtGen', description: 'ArtGen is a web application that helps users generate creative prompts for AI-based image generation tools. Built with the MERN Stack.', icon: ArtGenIcon , liveDemo :'https://art-gen-one.vercel.app/' , github : 'https://github.com/kchouhan145/ArtGen' },
     { name: 'Notes App', description: 'This project is made with the use of React JS. Which saves the notes in your local storage and provide features to more with that', icon: NotesIcon , liveDemo :'https://notes-app-kartik.vercel.app/' , github : 'https://github.com/kchouhan145/notesApp' },
     { name: 'Weather App', description: 'Developed a dynamic Weather App using JavaScript to provide real-time weather updates for cities around the world.', icon: WeatherIcon, liveDemo:'https://weather-kartik.vercel.app/', github:'https://github.com/kchouhan145/Weather-App1'},
     { name: 'Quiz App', description: 'This project aims to showcase my React Skills and this made using Tailwind CSS , React JS.', icon: QuizIcon, liveDemo:'https://react-quiz-app-kartik.vercel.app/', github:'https://github.com/kchouhan145/React-quiz-app' },
