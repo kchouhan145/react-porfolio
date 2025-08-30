@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGithub,  FaInstagram, FaLinkedin,  FaWhatsapp } from 'react-icons/fa'
 import heroImg from '../assets/hero.jpg'
+import unstopIcon from '../assets/unstopicon.png'
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
           <div className="flex gap-6 mt-4 text-2xl text-gray-700 dark:text-white">
             <a href="https://github.com/kchouhan145" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/kchouhan14/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://unstop.com/u/karticho59125" target="_blank" rel="noopener noreferrer" title="Unstop Profile">
+              <img src={unstopIcon} alt="Unstop" className="w-6 h-6 hover:scale-110 transition-transform duration-200" />
+            </a>
             <a href="https://wa.me/919997694610?text=Hey%0A" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
             <a href="https://www.instagram.com/kchouhan.14" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           </div>

@@ -9,6 +9,7 @@ import Contact from './Components/Contact'
 import Skills from './Components/Skills'
 import NavBar from './Components/NavBar'
 import Education from './Components/Education'
+import Experience from './Components/Experience'
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,15 @@ const router = createBrowserRouter([
       <>
         <NavBar />
         <Projects/>
+      </>
+    )
+  },
+  {
+    path: '/experience',
+    element: (
+      <>
+        <NavBar />
+        <Experience/>
       </>
     )
   },
