@@ -42,13 +42,6 @@ const Contact = () => {
         <a href="https://unstop.com/u/karticho59125" target="_blank" rel="noopener noreferrer" aria-label="Unstop">
           <img src={unstopIcon} alt="Unstop" className="w-7 h-7 hover:scale-110 transition-transform duration-200" />
         </a>
-        {/* LeetCode */}
-        <a href="https://leetcode.com/kchouhan14" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
-          <svg className="w-7 h-7 text-yellow-500 hover:text-yellow-600" fill="currentColor" viewBox="0 0 32 32">
-            <path d="M25.6 16c0-2.112-.832-4.096-2.336-5.6l-6.4-6.4a1.6 1.6 0 0 0-2.272 2.272l6.4 6.4a4.8 4.8 0 0 1 0 6.752l-6.4 6.4a1.6 1.6 0 1 0 2.272 2.272l6.4-6.4A7.936 7.936 0 0 0 25.6 16z"/>
-            <circle cx="16" cy="16" r="2.5" fill="#FFA116"/>
-          </svg>
-        </a>
       </div>
     </div>
   )
