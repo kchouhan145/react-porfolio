@@ -5,44 +5,57 @@ import unstopIcon from '../assets/unstopicon.png'
 
 const Home = () => {
   return (
-    <div className="min-h-[95vh] w-[90vw] max-w-6xl mx-auto rounded-xl m-3 shadow-xl bg-white flex items-center justify-center dark:bg-gray-800 dark:text-white">
-      <div className="flex flex-col md:flex-row w-full items-center justify-between py-8 px-6 gap-7">
-        <div className="flex flex-col md:w-1/2 gap-6">
-          <div className="flex items-center gap-6">
-            <h1 className="font-extrabold text-3xl md:text-4xl leading-tight">
-              I am <br /><div className='text-green-500'>Kartik Chouhan</div>a Full-Stack Web Developer and<br />Tech Enthusiast
+    <section className="page-shell min-h-[78vh] flex items-center">
+      <div className="grid md:grid-cols-2 items-center gap-8 w-full">
+        <div className="space-y-6">
+          <p className="chip w-fit">Full-Stack Developer</p>
+          <div>
+            <h1 className="section-title tone-title">
+              Engineer-focused, design-conscious web experiences.
             </h1>
+            <p className="section-lead mt-4">
+              I am Kartik Chouhan, a MERN stack developer crafting production-ready applications with clean architecture, strong UX, and dependable delivery.
+            </p>
           </div>
-          <p className="text-gray-600 text-base md:text-lg mt-1 md: text-justify dark:text-white">
-            I have expertise in Programming with a strong foundation in C++ programming. Additionally, I possess a strong knowledge of the MERN stack and a solid background in Front-End development, having worked on multiple projects that demonstrate my skills in creating dynamic and responsive web applications.
-          </p>
-          <div className="flex gap-6 mt-4 text-2xl text-gray-700 dark:text-white">
-            <a href="https://github.com/kchouhan145" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/kchouhan14/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+
+          <div className="flex flex-wrap gap-3">
+            <a
+              href='https://drive.google.com/file/d/1o8hUahsgaW74-urCeTIu7YaBzrnglFZ7/view?usp=sharing'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              View Resume
+            </a>
+            <a href="/project" className="btn-secondary">
+              Explore Projects
+            </a>
+          </div>
+
+          <div className="flex gap-4 mt-1 text-xl">
+            <a className="icon-link transition-colors" href="https://github.com/kchouhan145" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
+            <a className="icon-link transition-colors" href="https://www.linkedin.com/in/kchouhan14/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
             <a href="https://unstop.com/u/karticho59125" target="_blank" rel="noopener noreferrer" title="Unstop Profile">
               <img src={unstopIcon} alt="Unstop" className="w-6 h-6 hover:scale-110 transition-transform duration-200" />
             </a>
-            <a href="https://wa.me/919997694610?text=Hey%0A" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-            <a href="https://www.instagram.com/kchouhan.14" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a className="icon-link transition-colors" href="https://wa.me/919997694610?text=Hey%0A" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a className="icon-link transition-colors" href="https://www.instagram.com/kchouhan.14" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
           </div>
         </div>
-        <div className="md:w-1/2 flex flex-col items-center justify-center mt-8 md:mt-0">
+
+        <div className="flex flex-col items-center justify-center">
           <img
             src={heroImg}
-            alt="Hero"
-            className="w-48 h-48 md:w-80 md:h-80 object-cover rounded-3xl shadow-lg"
+            alt="Kartik Chouhan"
+            className="w-56 h-56 md:w-[22rem] md:h-[22rem] object-cover rounded-[2rem] shadow-2xl border-4"
+            style={{ borderColor: 'var(--surface-strong)' }}
           />
-          <a
-            href='https://drive.google.com/file/d/1o8hUahsgaW74-urCeTIu7YaBzrnglFZ7/view?usp=sharing'
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 px-6 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition"
-          >
-            View CV
-          </a>
+          <div className="mt-5 px-4 py-2 text-sm rounded-full border tone-body" style={{ background: 'var(--surface-strong)', borderColor: 'var(--border-soft)' }}>
+            Available for internships and full-time roles
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

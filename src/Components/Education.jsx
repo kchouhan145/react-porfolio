@@ -1,28 +1,43 @@
 import React from 'react'
 
 const Education = () => {
+  const records = [
+    {
+      title: 'Master of Computer Applications',
+      institution: 'Kurukshetra University, Kurukshetra',
+      timeline: '2024 - 2026',
+      score: 'Pursuing'
+    },
+    {
+      title: 'Bachelor of Computer Science',
+      institution: 'Gurukul Kangri (DU), Haridwar',
+      timeline: '2021 - 2024',
+      score: 'CGPA: 8.15'
+    }
+  ]
+
   return (
-    <div className="min-h-[95vh] w-[90vw] max-w-6xl mx-auto rounded-xl m-3 shadow-xl bg-white flex items-center justify-center dark:bg-gray-800">
-      <div className="w-full p-8">
-        <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white">Education</h2>
-        <div className="space-y-8">
-          <div className="bg-gray-50 border border-gray-300 rounded-lg p-6 shadow-md flex flex-col justify-between transition-shadow duration-300 ease-in-out hover:shadow-lg dark:bg-black dark:shadow-violet-700 dark:border-none">
-            <h3 className="text-xl font-semibold text-green-500 mb-2">Post Graduation</h3>
-            <p className="text-gray-700 dark:text-white">Institution: <span className="font-medium">Kurukshetra University , Kurukshetra</span></p>
-            <p className="text-gray-700 dark:text-white">Degree: <span className="font-medium">Masters of Computer Applications</span></p>
-            <p className="text-gray-700 dark:text-white">Year: <span className="font-medium">2026</span></p>
-            <p className="text-gray-700 dark:text-white">Percentage/Grade: <span className="font-medium">Pursuing</span></p>
-          </div>
-          <div className="bg-gray-50 border border-gray-300 rounded-lg p-6 shadow-md flex flex-col justify-between transition-shadow duration-300 ease-in-out hover:shadow-lg dark:bg-black dark:shadow-violet-700 dark:border-none">
-            <h3 className="text-xl font-semibold text-green-500 mb-2">Graduation</h3>
-            <p className="text-gray-700 dark:text-white">Institution: <span className="font-medium">Gurukul Kangri (DU) Haridwar</span></p>
-            <p className="text-gray-700 dark:text-white">Degree: <span className="font-medium">Bachelor of Computer Science</span></p>
-            <p className="text-gray-700 dark:text-white">Year: <span className="font-medium">2024</span></p>
-            <p className="text-gray-700 dark:text-white">Percentage/Grade: <span className="font-medium">8.15</span></p>
-          </div>
-        </div>
+    <section className="page-shell">
+      <div className="text-center mb-8">
+        <h2 className="section-title">Education</h2>
+        <p className="section-lead mt-2">
+          Academic foundation shaped by computer science and practical application development.
+        </p>
       </div>
-    </div>
+
+      <div className="space-y-5 max-w-3xl mx-auto">
+        {records.map((record) => (
+          <article key={record.title} className="glass-card p-6 md:p-7">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <h3 className="font-bold text-xl tone-title">{record.title}</h3>
+              <span className="chip">{record.timeline}</span>
+            </div>
+            <p className="tone-body font-semibold">{record.institution}</p>
+            <p className="tone-muted mt-2 text-sm">{record.score}</p>
+          </article>
+        ))}
+      </div>
+    </section>
   )
 }
 
