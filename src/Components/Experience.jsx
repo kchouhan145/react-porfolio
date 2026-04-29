@@ -15,19 +15,6 @@ const Experience = () => {
         'Contributed to production-quality feature delivery in an agile team setup.'
       ],
       technologies: ['React', 'Tailwind CSS', 'Electron', 'i18n', 'JavaScript']
-    },
-    {
-      id: 2,
-      title: 'AI Azure Intern',
-      company: 'Edunet Foundation',
-      location: 'Remote',
-      duration: 'Jun 2025',
-      description: [
-        'Worked with Azure AI services and practical cloud-based ML workflows.',
-        'Built solution prototypes using Azure Machine Learning and cognitive services.',
-        'Learned engineering patterns for secure and scalable AI deployments.'
-      ],
-      technologies: ['Microsoft Azure', 'Azure ML', 'Cognitive Services', 'Python', 'AI/ML']
     }
   ]
 

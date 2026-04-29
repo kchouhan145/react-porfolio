@@ -20,12 +20,12 @@ const Skills = () => {
     {
       title: 'Databases',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-      detail: 'MySQL, PostgreSQL, schema design, query optimization, and data modeling.'
+      detail: 'MySQL, schema design, query optimization, and data modeling.'
     },
     {
       title: 'Programming',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
-      detail: 'C++, Python, and modern JavaScript for algorithms and automation tasks.'
+      detail: 'C++, and modern JavaScript for algorithms and automation tasks.'
     },
     {
       title: 'Version Control',
