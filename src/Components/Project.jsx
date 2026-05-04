@@ -1,11 +1,24 @@
-import React from 'react'
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import React from "react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-const Project = ({ name, description, icon, liveDemo, github, technologies }) => {
+const Project = ({
+  name,
+  description,
+  icon,
+  liveDemo,
+  github,
+  technologies,
+}) => {
   return (
     <article className="glass-card p-5 flex flex-col h-full transition-transform duration-300 hover:-translate-y-1">
       <div className="flex items-center gap-3 mb-3">
-        {icon && <img src={icon} alt={name} className="w-9 h-9 rounded-md object-cover" />}
+        {icon && (
+          <img
+            src={icon}
+            alt={name}
+            className="w-9 h-9 rounded-md object-cover"
+          />
+        )}
         <h3 className="text-lg font-bold tone-title">{name}</h3>
       </div>
 
@@ -40,7 +53,7 @@ const Project = ({ name, description, icon, liveDemo, github, technologies }) =>
         </a>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

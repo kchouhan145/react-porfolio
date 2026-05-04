@@ -1,25 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { FaBars, FaMoon, FaSun, FaTimes } from 'react-icons/fa'
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldUseDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+    const savedTheme = localStorage.getItem("portfolio-theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+    const shouldUseDark = savedTheme ? savedTheme === "dark" : prefersDark;
 
-    document.documentElement.classList.toggle('dark', shouldUseDark);
+    document.documentElement.classList.toggle("dark", shouldUseDark);
     setIsDark(shouldUseDark);
   }, []);
 
   const toggleTheme = () => {
     const nextThemeIsDark = !isDark;
     setIsDark(nextThemeIsDark);
-    document.documentElement.classList.toggle('dark', nextThemeIsDark);
-    localStorage.setItem('portfolio-theme', nextThemeIsDark ? 'dark' : 'light');
+    document.documentElement.classList.toggle("dark", nextThemeIsDark);
+    localStorage.setItem("portfolio-theme", nextThemeIsDark ? "dark" : "light");
   };
 
   const toggleMobileMenu = () => {
@@ -31,12 +33,12 @@ const NavBar = () => {
   };
 
   const navItems = [
-    { to: '/', label: 'Home' },
-    { to: '/skills', label: 'Skills' },
-    { to: '/experience', label: 'Experience' },
-    { to: '/project', label: 'Projects' },
-    { to: '/education', label: 'Education' },
-    { to: '/contact', label: 'Contact' }
+    { to: "/", label: "Home" },
+    { to: "/skills", label: "Skills" },
+    { to: "/experience", label: "Experience" },
+    { to: "/project", label: "Projects" },
+    { to: "/education", label: "Education" },
+    { to: "/contact", label: "Contact" },
   ];
 
   return (
@@ -51,7 +53,7 @@ const NavBar = () => {
             <NavLink
               key={item.to}
               className={({ isActive }) =>
-                `rounded-lg px-3 py-2 font-semibold transition-all duration-200 ${isActive ? 'nav-link-active shadow' : 'nav-link'}`
+                `rounded-lg px-3 py-2 font-semibold transition-all duration-200 ${isActive ? "nav-link-active shadow" : "nav-link"}`
               }
               to={item.to}
             >
@@ -65,8 +67,12 @@ const NavBar = () => {
             aria-label="Toggle dark mode"
             type="button"
           >
-            {isDark ? <FaSun className="text-amber-500" /> : <FaMoon className="text-slate-700" />}
-            {isDark ? 'Light' : 'Dark'}
+            {isDark ? (
+              <FaSun className="text-amber-500" />
+            ) : (
+              <FaMoon className="text-slate-700" />
+            )}
+            {isDark ? "Light" : "Dark"}
           </button>
         </div>
 
@@ -86,19 +92,29 @@ const NavBar = () => {
             aria-label="Toggle mobile menu"
             type="button"
           >
-            {isMobileMenuOpen ? <FaTimes className="h-5 w-5" /> : <FaBars className="h-5 w-5" />}
+            {isMobileMenuOpen ? (
+              <FaTimes className="h-5 w-5" />
+            ) : (
+              <FaBars className="h-5 w-5" />
+            )}
           </button>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 rounded-xl shadow-xl border md:hidden z-50" style={{ background: 'var(--surface-strong)', borderColor: 'var(--border-soft)' }}>
+          <div
+            className="absolute top-full left-0 right-0 mt-2 rounded-xl shadow-xl border md:hidden z-50"
+            style={{
+              background: "var(--surface-strong)",
+              borderColor: "var(--border-soft)",
+            }}
+          >
             <div className="flex flex-col py-2">
               {navItems.map((item) => (
                 <NavLink
                   key={item.to}
                   className={({ isActive }) =>
                     `px-4 py-3 font-semibold rounded-lg mx-2 transition-colors duration-200 ${
-                      isActive ? 'nav-link-active' : 'nav-link'
+                      isActive ? "nav-link-active" : "nav-link"
                     }`
                   }
                   to={item.to}
@@ -112,7 +128,7 @@ const NavBar = () => {
         )}
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

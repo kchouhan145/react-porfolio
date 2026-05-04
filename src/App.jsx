@@ -1,75 +1,72 @@
-import React from 'react'
-import {
-  RouterProvider,
-  createBrowserRouter
-} from 'react-router-dom'
-import Home from './Components/Home'
-import Projects from './Components/Projects'
-import Contact from './Components/Contact'
-import Skills from './Components/Skills'
-import NavBar from './Components/NavBar'
-import Education from './Components/Education'
-import Experience from './Components/Experience'
+import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./Components/Home";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Skills from "./Components/Skills";
+import NavBar from "./Components/NavBar";
+import Education from "./Components/Education";
+import Experience from "./Components/Experience";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: (
       <>
         <NavBar />
         <Home />
       </>
-    )
+    ),
   },
   {
-    path: '/education',
+    path: "/education",
     element: (
       <>
         <NavBar />
-        <Education/>
+        <Education />
       </>
-    )
+    ),
   },
   {
-    path:'/skills',
-    element:(
-      <>
-        <NavBar />
-        <Skills/>
-      </>
-    )
-  },
-  {
-    path: '/project',
-    element:(
-      <>
-        <NavBar />
-        <Projects/>
-      </>
-    )
-  },
-  {
-    path: '/experience',
+    path: "/skills",
     element: (
       <>
         <NavBar />
-        <Experience/>
+        <Skills />
       </>
-    )
+    ),
   },
   {
-    path: '/contact',
+    path: "/project",
     element: (
       <>
         <NavBar />
-        <Contact/>
+        <Projects />
       </>
-    )
-  }
-])
+    ),
+  },
+  {
+    path: "/experience",
+    element: (
+      <>
+        <NavBar />
+        <Experience />
+      </>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <>
+        <NavBar />
+        <Contact />
+      </>
+    ),
+  },
+]);
 
 function App() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

@@ -1,27 +1,28 @@
-import React from 'react'
+import React from "react";
 
 const Education = () => {
   const records = [
     {
-      title: 'Master of Computer Applications',
-      institution: 'Kurukshetra University, Kurukshetra',
-      timeline: '2024 - 2026',
-      score: 'Pursuing'
+      title: "Master of Computer Applications",
+      institution: "Kurukshetra University, Kurukshetra",
+      timeline: "2024 - 2026",
+      score: "Pursuing",
     },
     {
-      title: 'Bachelor of Computer Science',
-      institution: 'Gurukul Kangri (DU), Haridwar',
-      timeline: '2021 - 2024',
-      score: 'CGPA: 8.15'
-    }
-  ]
+      title: "Bachelor of Computer Science",
+      institution: "Gurukul Kangri (DU), Haridwar",
+      timeline: "2021 - 2024",
+      score: "CGPA: 8.15",
+    },
+  ];
 
   return (
     <section className="page-shell">
       <div className="text-center mb-8">
         <h2 className="section-title">Education</h2>
         <p className="section-lead mt-2">
-          Academic foundation shaped by computer science and practical application development.
+          Academic foundation shaped by computer science and practical
+          application development.
         </p>
       </div>
 
@@ -38,7 +39,7 @@ const Education = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
