@@ -22,7 +22,7 @@ const Home = () => {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://drive.google.com/file/d/1rJ3PZViVyhxU_7WaIcsdMBGpB_4fzmcd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1R0fC1p7_BzZScaBbqCq0U2-FGHI4q8gS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
