@@ -1,13 +1,32 @@
 import React from "react";
 import Project from "./Project";
-import NotesIcon from "../assets/notessaver.png";
+// import NotesIcon from "../assets/notessaver.png";
 import WeatherIcon from "../assets/weather.png";
-import QuizIcon from "../assets/quiz.png";
-import ArtGenIcon from "../assets/ArtGen.png";
+// import QuizIcon from "../assets/quiz.png";
+// import ArtGenIcon from "../assets/ArtGen.png";
 import ChatAppIcon from "../assets/ChatApp.png";
+import CampuslyIcon from "../assets/campusly.png"
 
 const Projects = () => {
   const projects = [
+    {
+      name: "Campusly (Campus Management Application)",
+      description:
+        "A full-stack cross-platform campus management platform with role-based authentication, event and notice management, attendance tracking, file sharing, and real-time notifications for students and administrators.",
+      icon: CampuslyIcon,
+      liveDemo: "https://campuslyweb.vercel.app", // Replace with deployed URL
+      github: "https://github.com/kchouhan145/campusly-web", // Replace with actual repository URL
+      technologies: [
+        "React",
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "REST API",
+        "Firebase",
+      ],
+    },
     {
       name: "DC Zone (Chat Application)",
       description:
@@ -25,24 +44,6 @@ const Projects = () => {
       ],
     },
     {
-      name: "ArtGen",
-      description:
-        "A prompt generation platform that helps users craft high-quality ideas for AI-powered image creation workflows.",
-      icon: ArtGenIcon,
-      liveDemo: "https://art-gen-one.vercel.app/",
-      github: "https://github.com/kchouhan145/ArtGen",
-      technologies: ["MERN", "REST API", "Prompt Engineering"],
-    },
-    {
-      name: "Notes App",
-      description:
-        "A lightweight React notes application with local storage persistence and smooth editing workflows.",
-      icon: NotesIcon,
-      liveDemo: "https://notes-app-kartik.vercel.app/",
-      github: "https://github.com/kchouhan145/notesApp",
-      technologies: ["React", "Local Storage", "JavaScript"],
-    },
-    {
       name: "Weather App",
       description:
         "A city-based weather tracker that fetches and displays real-time climate data from third-party APIs.",
@@ -50,15 +51,6 @@ const Projects = () => {
       liveDemo: "https://weather-kartik.vercel.app/",
       github: "https://github.com/kchouhan145/Weather-App1",
       technologies: ["JavaScript", "Weather API", "Responsive UI"],
-    },
-    {
-      name: "Quiz App",
-      description:
-        "An interactive quiz interface developed with React and Tailwind CSS to showcase reusable UI components.",
-      icon: QuizIcon,
-      liveDemo: "https://react-quiz-app-kartik.vercel.app/",
-      github: "https://github.com/kchouhan145/React-quiz-app",
-      technologies: ["React", "Tailwind CSS", "Component Design"],
     },
   ];
 
