@@ -14,8 +14,9 @@ const Projects = () => {
       description:
         "A full-stack cross-platform campus management platform with role-based authentication, event and notice management, attendance tracking, file sharing, and real-time notifications for students and administrators.",
       icon: CampuslyIcon,
-      liveDemo: "https://campuslyweb.vercel.app", // Replace with deployed URL
-      github: "https://github.com/kchouhan145/campusly-web", // Replace with actual repository URL
+      liveDemo: "https://campuslyweb.vercel.app",
+      downloadApp:"https://campuslyweb.vercel.app/download",
+      github: "https://campuslyweb.vercel.app/github", 
       technologies: [
         "React",
         "React Native",
@@ -30,7 +31,7 @@ const Projects = () => {
     {
       name: "DC Zone (Chat Application)",
       description:
-        "A full-stack real-time chat platform with Socket.io, JWT authentication, and responsive UX for seamless communication.",
+        "A full-stack, real-time chat platform built using modern web technologies, featuring Socket.io-powered instant messaging, secure JWT-based user authentication and authorization, and a fully responsive, user-friendly interface. The application enables seamless communication through real-time message delivery, secure user sessions, efficient client-server interaction, and an intuitive user experience optimized for desktops, tablets, and mobile devices.",
       icon: ChatAppIcon,
       liveDemo: "https://dczone.onrender.com/",
       github: "https://github.com/kchouhan145/ChatApp",
@@ -46,7 +47,7 @@ const Projects = () => {
     {
       name: "Weather App",
       description:
-        "A city-based weather tracker that fetches and displays real-time climate data from third-party APIs.",
+        "A responsive city-based weather tracking application that fetches and displays real-time weather and climate data using third-party APIs. Users can search for cities and instantly access essential weather information, including current temperature, weather conditions, humidity, wind speed, and other relevant climate details. The application features a clean, intuitive, and mobile-friendly interface that ensures a smooth user experience across desktops, tablets, and smartphones.",
       icon: WeatherIcon,
       liveDemo: "https://weather-kartik.vercel.app/",
       github: "https://github.com/kchouhan145/Weather-App1",

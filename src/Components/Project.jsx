@@ -6,6 +6,7 @@ const Project = ({
   description,
   icon,
   liveDemo,
+  downloadApp,
   github,
   technologies,
 }) => {
@@ -42,6 +43,15 @@ const Project = ({
           <FaExternalLinkAlt className="text-xs" />
           Live Demo
         </a>
+        {downloadApp ? <a
+          href={downloadApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary inline-flex items-center gap-2 text-sm"
+        >
+          <FaExternalLinkAlt className="text-xs" />
+          Download App
+        </a>:''}
         <a
           href={github}
           target="_blank"
