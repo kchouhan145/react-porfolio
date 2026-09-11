@@ -45,7 +45,7 @@ const NavBar = () => {
     <nav className="sticky top-3 z-40 w-full flex justify-center px-3">
       <div className="surface-nav w-full max-w-6xl rounded-2xl backdrop-blur-xl px-4 md:px-6 flex items-center justify-between relative">
         <div className="brand-title tone-title font-bold text-base sm:text-lg py-3">
-          Kartik Chouhan
+          {"<KARTIK CHOUHAN/>"}
         </div>
 
         <div className="hidden md:flex flex-row gap-2 items-center text-sm py-2">
