@@ -7,6 +7,7 @@ import Skills from "./Components/Skills";
 import NavBar from "./Components/NavBar";
 import Education from "./Components/Education";
 import Experience from "./Components/Experience";
+import ProjectDetails from "./Components/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,15 @@ const router = createBrowserRouter([
       <>
         <NavBar />
         <Projects />
+      </>
+    ),
+  },
+  {
+    path: "/project/:projectId",
+    element: (
+      <>
+        <NavBar />
+        <ProjectDetails />
       </>
     ),
   },
